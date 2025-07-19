@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bryan Iban | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+
+  <!-- 🔹 Navbar at the TOP -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 HERO SECTION directly below -->
+  <header class="hero" id="hero">
+    <div class="container" data-aos="fade-down">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
+      <h1>Bryan Iban</h1>
+      <p>Full-Stack Web Developer</p>
+      <a href="Bryan_Iban_CV.pdf" class="cv-btn" download>📄 Download CV</a>
+      <button onclick="toggleDarkMode()">🌙 Toggle Theme</button>
+    </div>
+  </header>
+
+  <!-- 🔹 Remaining Sections -->
+  <section id="about" class="section" data-aos="fade-right">
+    <h2>👨‍💻 About Me</h2>
+    <p>I’m a web developer from the Philippines with over 6 years of experience in secure and optimized web apps. I specialize in CI4, PHP, MySQL, and I build retail and credit portals.</p>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-left">
+    <h2>⚙️ Skills</h2>
+    <div class="skills-grid">
+      <span>PHP / CodeIgniter</span>
+      <span>JavaScript / jQuery</span>
+      <span>MySQL / Oracle / SQL</span>
+      <span>AJAX / REST API</span>
+      <span>HTML / CSS / Bootstrap</span>
+      <span>GIT / GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>📁 Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Retail POS System</h3>
+        <p>CI4 backend, inventory, cashier, audit logs and Excel exports.</p>
+      </div>
+      <div class="card">
+        <h3>Credit Management Portal</h3>
+        <p>Credit verification, account logs, dynamic reporting using raw SQL filters.</p>
+      </div>
+      <div class="card">
+        <h3>Reports Distribution Portal</h3>
+        <p>PDF/Excel generation, batch jobs, secure authentication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>📬 Contact Me</h2>
+    <form action="mailto:bryaniban.dev@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send via Email</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Bryan Iban. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
